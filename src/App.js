@@ -1,21 +1,26 @@
 function App() {
-  const num1 = Math.ceil(Math.random() * 6);
-  const num2 = Math.ceil(Math.random() * 6);
-
-  let messageClassName = "lose";
-  let message = "다시 던져보세요";
-
-  if (num1 == num2) {
-    messageClassName = "win";
-    message = "당첨";
-  }
+  const myStyle = {
+    color: "blue",
+    backgroundColor: "gold", // lowerCamelCase로 변경
+    fontSize: "70px",
+    textAlign: "center",
+  }; // js object
 
   return (
     <>
-      <h1>1번 주사위 : {num1}</h1>
-      <h1>2번 주사위 : {num2}</h1>
-
-      <h1 className={messageClassName}>{message}</h1>
+      {/* style 속성은 객체로 주어야 함 */}
+      <div style={myStyle}>Lorem ipsum dolor.</div>
+      <hr />
+      <div
+        style={{
+          color: "red",
+          backgroundColor: "yellow", // lowerCamelCase로 변경
+          fontSize: "70px",
+          textAlign: "center",
+        }} // 바깥 중괄호는 js코드 쓰려고, 안쪽 중괄호는 js객체를 쓰려고 사용
+      >
+        Lorem ipsum dolor.
+      </div>
     </>
   );
 }
