@@ -8,8 +8,10 @@ function App() {
       {/* for 속성은 htmlFor로 작성 */}
       <label htmlFor="nameInput">이름</label>
       <input type="text" id="nameInput" />
-      <label htmlFor="ageInput"></label>
-      <input type="text" id="ageInput" />
+      <div>
+        <label htmlFor="ageInput"></label>
+        <input type="text" id="ageInput" />
+      </div>
     </>
   );
 }
