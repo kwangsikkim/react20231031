@@ -1,14 +1,16 @@
-import MyBox, { address } from "./components/MyBox";
-import MyElem, { address as myAddress } from "./components/MyElem";
-// as로 named export 값을 import할 때 별칭을 줄 수 있음.
+// style 적용 방법
+// 보통 css 파일
+// css module 사용
+// chakraui css library
+
+import { MyComp } from "./components/MyComp";
+import { MyBox } from "./components/MyBox";
 
 function App() {
   return (
     <>
+      <MyComp />
       <MyBox />
-      <h1>{address}</h1>
-      <MyElem />
-      <h1>{myAddress}</h1>
     </>
   );
 }
