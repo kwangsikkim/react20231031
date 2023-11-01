@@ -8,6 +8,7 @@ export function MyText() {
       </h1>
       <h1 className={[style.error, style.special, style.coffee].join(" ")}>
         Lorem ipsum dolor sit amet.2
+
       </h1>
     </div>
   );
