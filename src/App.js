@@ -1,15 +1,21 @@
-import { MyBox, MyElem, MyContainer, name, address, person } from "./MyBox";
+import { MyElem, city } from "./components/MyElem";
+import { country, person } from "./components/MyBox";
+
+import abc from "./components/MyElem";
+import MyBBBBBBBBox from "./components/MyBox";
+// default export는 1개기 때문에 아무이름이나 써도 사용 가능
 
 function App() {
-  console.log("name", name);
-  console.log("address", address);
-  console.log("person", person);
-
   return (
     <>
-      <MyBox />
       <MyElem />
-      <MyContainer />
+      <p>
+        {city}, {abc}
+      </p>
+      <MyBBBBBBBBox />
+      <p>
+        {country}, {person.age}, {person.name}
+      </p>
     </>
   );
 }
