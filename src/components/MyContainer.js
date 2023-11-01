@@ -1,9 +1,9 @@
-import "../style/style2.css";
+import myStyle from "../style/style2.module.css";
 
 export function MyContainer() {
   return (
     <div>
-      <h1 className="boxClass">Lorem ipsum dolor sit amet.</h1>
+      <h1 className={myStyle.boxClass}>Lorem ipsum dolor sit amet.</h1>
     </div>
   );
 }
