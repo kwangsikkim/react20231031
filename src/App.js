@@ -1,21 +1,14 @@
-import { MyElem, city } from "./components/MyElem";
-import { country, person } from "./components/MyBox";
-
-import abc from "./components/MyElem";
-import MyBBBBBBBBox from "./components/MyBox";
-// default export는 1개기 때문에 아무이름이나 써도 사용 가능
+import MyBox, { address } from "./components/MyBox";
+import MyElem, { address as myAddress } from "./components/MyElem";
+// as로 named export 값을 import할 때 별칭을 줄 수 있음.
 
 function App() {
   return (
     <>
+      <MyBox />
+      <h1>{address}</h1>
       <MyElem />
-      <p>
-        {city}, {abc}
-      </p>
-      <MyBBBBBBBBox />
-      <p>
-        {country}, {person.age}, {person.name}
-      </p>
+      <h1>{myAddress}</h1>
     </>
   );
 }
