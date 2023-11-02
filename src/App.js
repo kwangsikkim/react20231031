@@ -27,7 +27,7 @@ function App() {
           <Table>
             <Thead>
               <Tr>
-                <Th>Lorem.</Th>
+                <Th>Lorem..</Th>
                 <Th>Soluta.</Th>
                 <Th>At.</Th>
                 <Th>Facilis.</Th>
