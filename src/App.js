@@ -1,38 +1,56 @@
-import { Button, useToast } from "@chakra-ui/react";
+import { Button } from "@chakra-ui/react";
+import { ArrowRightIcon, EmailIcon } from "@chakra-ui/icons";
+
+function ArrowRightIconIcon() {
+  return null;
+}
 
 function App() {
-  const toast = useToast();
-
   return (
     <>
-      <Button
-        onClick={() =>
-          toast({
-            title: "저장 완료",
-            description: "게시물이 저장되었습니다.",
-            duration: 2000,
-            position: "bottom",
-            isClosable: true,
-          })
-        }
-      >
-        토스트 띄우기 1
+      <Button colorScheme="blue">Lorem.</Button>
+      <Button colorScheme="red">Lorem.</Button>
+      <Button colorScheme="yellow">Adipisci.</Button>
+      <Button colorScheme="orange">Laborum.</Button>
+      <Button size={"sm"} colorScheme="teal">
+        Eos?
       </Button>
-
-      <Button
-        onClick={() =>
-          toast({
-            title: "저장 실패",
-            description: "게시물이 저장되지 않았습니다.",
-            duration: 2000,
-            position: "bottom",
-            isClosable: true,
-            status: "error",
-          })
-        }
-      >
-        토스트 띄우기 2
+      <Button size={"lg"} colorScheme="messenger">
+        Repellat?
       </Button>
+      <Button colorScheme="telegram" variant="outline">
+        Iusto.
+      </Button>
+      <Button colorScheme="pink" variant="ghost">
+        Repudiandae.
+      </Button>
+      <Button colorScheme="green" variant="link">
+        Delectus.
+      </Button>
+      <Button leftIcon={<EmailIcon />}>Ducimus.</Button>
+      <Button rightIcon={<ArrowRightIcon />}>Alias.</Button>
+      <Button isLoading>Doloremque.</Button>
+      <Button isLoading loadingText="전송 중...">
+        Asperiores!
+      </Button>
+      <Button>Iste.</Button>
+      <Button>Ipsa!</Button>
+      <Button>Amet.</Button>
+      <Button>Cumque.</Button>
+      <Button>Dolorum?</Button>
+      <Button>Perferendis.</Button>
+      <Button>Soluta.</Button>
+      <Button>Ipsam.</Button>
+      <Button>Ratione.</Button>
+      <Button>Rerum!</Button>
+      <Button>Amet?</Button>
+      <Button>Unde.</Button>
+      <Button>Totam.</Button>
+      <Button>Cum.</Button>
+      <Button>Iste.</Button>
+      <Button>Deleniti.</Button>
+      <Button>Mollitia.</Button>
+      <Button>Sunt?</Button>
     </>
   );
 }
