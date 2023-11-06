@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 function App(props) {
   // HOOK : use 로 시작하는 함수
@@ -17,11 +17,7 @@ function App(props) {
     // hook 코드 작성 불가
   }
 
-  return (
-    <div>
-
-    </div>
-  );
+  return <div></div>;
 }
 
 export default App;
