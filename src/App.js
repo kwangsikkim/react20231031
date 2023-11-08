@@ -26,6 +26,8 @@ function Home() {
 
         <Button onClick={() => navigate("/path2/seoul")}>seoul 보기</Button>
         <Button onClick={() => navigate("/path2/busan")}>busan 보기</Button>
+
+        <br />
       </Box>
       <Box>
         <Outlet />
