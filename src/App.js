@@ -12,7 +12,8 @@ function HomeComponent() {
   return (
     <Box>
       공통된 요소들
-      <Outlet /> // 하위컴포넌트의 내용을 상위컴포넌트 공통요소에 더불어 나타나게 함
+      <Outlet /> // 하위컴포넌트의 내용을 상위컴포넌트 공통요소에 더불어
+      나타나게 함
     </Box>
   );
 }
